@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f1ea;
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+.contenedor {
+  background: white;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #b71c1c;
+  margin-top: 0;
+}
+
+.btn-principal {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-principal:hover {
+  background-color: #9a0007;
+}
+
+.oculto {
+  display: none;
+}
+
+.premios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff8e1;
+  border: 2px solid #ffe082;
+}
+
+.card.gordo {
+  background: #ffebee;
+  border-color: #ef5350;
+}
+
+.card span {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.card strong {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #111;
+}
+
+.comprobador {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  width: 140px;
+  text-align: center;
+  letter-spacing: 3px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+#btn-comprobar {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#mensaje-resultado {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}

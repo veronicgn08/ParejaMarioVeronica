@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador Lotería de Navidad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>🎄 Sorteo Lotería de Navidad</h1>
+    
+    <button id="btn-sortear" class="btn-principal">🎱 Realizar Sorteo</button>
+
+    <div id="panel-resultados" class="oculto">
+      <h2>Premios Principales (por décimo)</h2>
+      <div class="premios-grid">
+        <div class="card gordo">
+          <span>El Gordo (400.000 €)</span>
+          <strong id="premio-1">-----</strong>
+        </div>
+        <div class="card segundo">
+          <span>2º Premio (125.000 €)</span>
+          <strong id="premio-2">-----</strong>
+        </div>
+        <div class="card tercero">
+          <span>3º Premio (50.000 €)</span>
+          <strong id="premio-3">-----</strong>
+        </div>
+      </div>
+
+      <div class="comprobador">
+        <h3>Comprueba tu décimo</h3>
+        <div class="input-group">
+          <input type="text" id="input-decimo" maxlength="5" placeholder="Ej: 04521">
+          <button id="btn-comprobar">Comprobar</button>
+        </div>
+        <p id="mensaje-resultado"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="loteria.js"></script>
+</body>
+</html>
